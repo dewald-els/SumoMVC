@@ -9,6 +9,7 @@ class Home extends Controller
 {
     public function index()
     {
+        $this->page_title = "Home";
         $this->model('User', 'user');
         $this->user->name = "Dewald Els";
         $this->user->email = "dewald@mail.com";

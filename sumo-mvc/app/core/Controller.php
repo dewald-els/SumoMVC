@@ -8,6 +8,8 @@
  */
 class Controller
 {
+    protected $page_title = '';
+
     public function __construct()
     {
         $this->subviews = [];
