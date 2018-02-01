@@ -14,6 +14,9 @@ class NotFoundException extends Exception
         parent::__construct($message, $code, $previous);
     }
 
+    /**
+     * Display an Error.
+     */
     public function print_error()
     {
         echo 'Error in file: <b>' . $this->getFile() . '</b> on line: '.$this->getLine();

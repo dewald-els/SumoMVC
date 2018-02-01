@@ -24,6 +24,9 @@ class App
         call_user_func([$this->controller, $this->method], $this->params);
     }
 
+    /**
+     * Check the URL for errors and sanitize.
+     */
     private function parse_url()
     {
         if (isset($_GET['url'])) {
@@ -33,6 +36,9 @@ class App
         }
     }
 
+    /**
+     * Load the Controller from the URL.
+     */
     private function load_controller()
     {
         if (file_exists(CONTROLLER_DIR . ucfirst($this->url[0]) . '.php')) {
@@ -48,6 +54,9 @@ class App
         $this->controller = new $this->controller;
     }
 
+    /**
+     * Check the method from the URL.
+     */
     private function load_method()
     {
         if (isset($this->url[1])) {
@@ -61,11 +70,17 @@ class App
         }
     }
 
+    /**
+     * Get params from URL.
+     */
     private function get_params()
     {
         $this->params = $this->url ? array_values($this->url) : [];
     }
 
+    /**
+     * Autoload Models and Libraries.
+     */
     private function _autoload()
     {
 
