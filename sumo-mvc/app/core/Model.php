@@ -1,5 +1,6 @@
 <?php
 
+namespace Sumo\Core;
 
 class Model
 {

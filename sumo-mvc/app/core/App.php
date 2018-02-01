@@ -1,4 +1,5 @@
 <?php
+namespace Sumo\Core;
 
 /**
  * Created by PhpStorm.

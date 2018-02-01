@@ -17,4 +17,4 @@ define('MODEL_DIR', APP_DIR . 'models' . DIRECTORY_SEPARATOR);
 define('VIEW_DIR', APP_DIR . 'views' . DIRECTORY_SEPARATOR);
 define('LIBRARIES_DIR', APP_DIR . 'libraries' . DIRECTORY_SEPARATOR);
 
-$app = new App;
+$app = new Sumo\Core\App;

@@ -1,11 +1,13 @@
 <?php
+
+use Sumo\Core\Controller;
+
 /**
  * Created by PhpStorm.
  * User: forest
  * Date: 2017/06/17
  * Time: 10:39 AM
  */
-
 class Home extends Controller
 {
 

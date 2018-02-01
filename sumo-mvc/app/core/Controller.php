@@ -1,5 +1,5 @@
 <?php
-
+namespace Sumo\Core;
 /**
  * Created by PhpStorm.
  * User: forest
