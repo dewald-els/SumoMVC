@@ -15,5 +15,6 @@ define('APP_DIR', '..' . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR);
 define('CONTROLLER_DIR', APP_DIR . 'controllers' . DIRECTORY_SEPARATOR);
 define('MODEL_DIR', APP_DIR . 'models' . DIRECTORY_SEPARATOR);
 define('VIEW_DIR', APP_DIR . 'views' . DIRECTORY_SEPARATOR);
+define('LIBRARIES_DIR', APP_DIR . 'libraries' . DIRECTORY_SEPARATOR);
 
 $app = new App;

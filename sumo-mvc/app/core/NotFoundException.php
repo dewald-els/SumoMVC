@@ -6,6 +6,7 @@
  * Date: 2017/06/17
  * Time: 2:42 PM
  */
+
 class NotFoundException extends Exception
 {
     public function __construct($message = "", $code = 0, Throwable $previous = null)

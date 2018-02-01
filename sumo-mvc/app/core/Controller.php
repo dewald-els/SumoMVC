@@ -6,6 +6,8 @@
  * Date: 2017/06/17
  * Time: 10:37 AM
  */
+
+
 class Controller
 {
     protected $page_title = '';
@@ -17,13 +19,14 @@ class Controller
 
     protected function model($model, $property_name = '')
     {
-        require_once MODEL_DIR . ucfirst($model) . '.php';
+        $model = ucfirst($model);
+
         if ($property_name != '') {
             $this->{$property_name} = new $model;
         }
         else
         {
-            $this->{$model} = new $model;
+            $this->{lcfirst($model)} = new $model;
         }
     }
 
