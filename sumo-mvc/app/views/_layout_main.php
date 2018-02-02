@@ -9,14 +9,14 @@
 
         <h1>Main page</h1>
 
-        <?php $this->render('components/header'); ?>
+        <?php $this->render('components/header/index'); ?>
 
         <?php foreach ($this->subviews as $view): ?>
             <?php $this->render($view); ?>
         <?php endforeach; ?>
 
 
-        <?php $this->render('components/footer'); ?>
+        <?php $this->render('components/footer/index'); ?>
 
     </body>
 </html>
