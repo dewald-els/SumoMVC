@@ -15,15 +15,19 @@ class Home extends Controller
     {
         $this->page_title = "Home";
 
-        $user = new User();
-        $user->name = "Dewald";
-        $user->email = "dewaldifels@gmail.com";
-        $user->username = "dewaldcels";
+//        Special::create([
+//            'day' => 'Monday',
+//            'name' => 'Pasta special',
+//            'description' => 'Get half price pasta',
+//            'available_time' => '16:00',
+//            'store_id' => '1'
+//        ]);
 
-        $lib = new Hello();
-        $lib->sayHello();
 
-        $this->add_data('user', $user);
+        $special = Special::find(3);
+
+        var_dump($special->day);
+
 
         $this->add_view('pages/home/index');
         $this->render();

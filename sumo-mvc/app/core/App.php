@@ -13,15 +13,22 @@ class App
     protected $method = 'index';
     protected $params = [];
     protected $url = '';
+    protected $database;
 
     public function __construct()
     {
+        $this->bootstrap_eloquent();
         $this->parse_url();
         $this->load_controller();
         $this->load_method();
         $this->get_params();
         $this->_autoload();
         call_user_func([$this->controller, $this->method], $this->params);
+    }
+
+    private function bootstrap_eloquent()
+    {
+        $this->database = new \Database();
     }
 
     /**
@@ -86,10 +93,7 @@ class App
 
         spl_autoload_register(function ($class_name) {
 
-            if (file_exists(MODEL_DIR . $class_name . '.php'))
-                include MODEL_DIR . $class_name . '.php';
-
-            else if (file_exists(LIBRARIES_DIR . $class_name . '.php'))
+            if (file_exists(LIBRARIES_DIR . $class_name . '.php'))
                 include LIBRARIES_DIR . $class_name . '.php';
 
         });
