@@ -24,10 +24,9 @@ class Home extends Controller
 //        ]);
 
 
-        $special = Special::find(3);
+        $special = Special::find(1);
 
-        var_dump($special->day);
-
+        var_dump($special);
 
         $this->add_view('pages/home/index');
         $this->render();
