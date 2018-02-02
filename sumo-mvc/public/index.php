@@ -16,5 +16,6 @@ define('CONTROLLER_DIR', APP_DIR . 'controllers' . DIRECTORY_SEPARATOR);
 define('MODEL_DIR', APP_DIR . 'models' . DIRECTORY_SEPARATOR);
 define('VIEW_DIR', APP_DIR . 'views' . DIRECTORY_SEPARATOR);
 define('LIBRARIES_DIR', APP_DIR . 'libraries' . DIRECTORY_SEPARATOR);
+define('ASSETS_DIR', './public' . DIRECTORY_SEPARATOR);
 
 $app = new Sumo\Core\App;

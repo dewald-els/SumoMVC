@@ -12,6 +12,7 @@ class Contact extends Controller
 {
     public function index()
     {
-        echo 'Contact';
+        $this->add_view('pages/contact/index');
+        $this->render();
     }
 }

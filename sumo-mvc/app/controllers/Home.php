@@ -14,20 +14,6 @@ class Home extends Controller
     public function index()
     {
         $this->page_title = "Home";
-
-//        Special::create([
-//            'day' => 'Monday',
-//            'name' => 'Pasta special',
-//            'description' => 'Get half price pasta',
-//            'available_time' => '16:00',
-//            'store_id' => '1'
-//        ]);
-
-
-        $special = Special::find(1);
-
-        var_dump($special);
-
         $this->add_view('pages/home/index');
         $this->render();
     }
