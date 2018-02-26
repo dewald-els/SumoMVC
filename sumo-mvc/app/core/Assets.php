@@ -1,5 +1,7 @@
 <?php
 
+namespace Sumo\Core;
+
 class Assets
 {
     static function css($filename)

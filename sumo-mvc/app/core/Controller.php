@@ -54,7 +54,7 @@ class Controller
     }
 
     /**
-     * Render the HTML.
+     * Render the main HTML layout file. Defaults to _layout_main
      * @param string $view
      */
     protected function render($view = '_layout_main')
